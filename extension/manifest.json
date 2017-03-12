@@ -1,0 +1,24 @@
+{
+
+  "manifest_version": 2,
+  "name": "* Voice Controlled Browser",
+  "version": "0.1",
+
+  "description": "Allows voice control of web pages",
+  "homepage_url": "https://bitbucket.org/atilberk/vcb",
+
+  "icons": {
+    "48": "icon-48.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icon-32.png",
+    "default_title": "VCB",
+    "default_popup": "popup/receive_command.html"
+  }
+
+}
