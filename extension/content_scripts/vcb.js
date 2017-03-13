@@ -1,41 +1,28 @@
 /*
 vcb():
-* removes every node in the document.body,
 * then inserts the supplied command
 * then removes itself as a listener
 */
-
-(function signalOut() {
-  console.log("VCB is on!");
-  setTimeout(signalOut,2000);
-})();
-
 function vcb(request, sender, sendResponse) {
-  removeEverything();
-  insertCommand(request.commandText);
+  insertRequest(request);
   browser.runtime.onMessage.removeListener(vcb);
-}
-
-/*
-Remove every node under document.body
-*/
-function removeEverything() {
-  while (document.body.firstChild) {
-    document.body.firstChild.remove();
-  }
 }
 
 /*
 Given a command, create and style an SPAN node consisting of the command,
 then insert the node into the document.
 */
-function insertCommand(commandText) {
-  var commandSpan = document.createElement("span");
-  commandSpan.appendChild( document.createTextNode(commandText) );
-  document.body.appendChild(commandSpan);
+function insertRequest(request) {
+  $("#vcb-out").html('"'+request.commandText+'" : '+request.parsed);
 }
 
 /*
 Assign vcb() as a listener for messages from the extension.
 */
 browser.runtime.onMessage.addListener(vcb);
+$("body").first().prepend(
+  "<div id='vcb-bar' style='position:fixed;top:0;width:95%;min-height:30px;background-color:#2980b9;z-index:9999;padding:10px 2.5%;box-sizing:content-box;'> \
+    <span id='vcb-out' style='font-family:monospace;color:white;font-weight:bold;font-size:16pt;'></span>\
+    <span style='cursor:pointer;font-family:Helvetica;color:rgba(255,255,255,0.3);font-weight:bold;font-size:14pt;float:right;' onclick='this.parentNode.parentNode.removeChild(this.parentNode)'>x</span>\
+  </div>"
+);

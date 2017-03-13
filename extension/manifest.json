@@ -12,13 +12,23 @@
   },
 
   "permissions": [
-    "activeTab"
+    "tabs",
+    "*://*/*",
+    "<all_urls>"
   ],
 
   "browser_action": {
     "default_icon": "icon-32.png",
     "default_title": "VCB",
     "default_popup": "popup/receive_command.html"
-  }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["/lib/jquery-3.1.1.min.js"],
+      "run_at": "document_start"
+    }
+  ]
 
 }
