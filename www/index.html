@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VCB</title>
+    <style media="screen">
+      html, body, #wrapper {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #fdd;
+        min-height: 10vh;
+      }
+
+      aside {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        background-color: #dff;
+        min-height: 80vh;
+      }
+
+      article {
+        display: inline-block;
+        width: 70%;
+        vertical-align: top;
+      }
+
+      footer {
+        background-color: #ffa;
+        min-height: 10vh;
+      }
+
+      header ul {
+        margin: 0;
+      }
+      header ul li {
+        list-style: none;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </header>
+      <aside id="sidebar" class="sidebar">
+        <ol>
+          <li><a href="#">List Item A</a></li>
+          <li><a href="#">List Item B</a></li>
+          <li><a href="#">List Item C</a></li>
+          <li><a href="#">List Item D</a></li>
+          <li><a href="#">List Item E</a></li>
+        </ol>
+      </aside><article class="content">
+        <h1>A Sample Content</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <form class="form" action="index.html" method="post">
+          <label for="name">Name</label><input type="text" name="name" value="" placeholder="Name">
+          <label for="name">Surname</label><input type="text" name="surname" value="" placeholder="Surname">
+          <input type="submit" name="submit" value="Send">
+        </form>
+      </article>
+      <footer>
+        <a href="#">Another link</a>
+      </footer>
+    </div>
+  </body>
+</html>
