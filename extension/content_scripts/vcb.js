@@ -21,7 +21,7 @@ Given a command, create and style an SPAN node consisting of the command,
 then insert the node into the document.
 */
 function insertRequest(request) {
-  $("#vcb-out").html('"'+request.commandText+'" : '+request.parsed);
+  $("#vcb-out").html(request.message);
 }
 
 /*

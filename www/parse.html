@@ -5,7 +5,13 @@
     <title></title>
   </head>
   <body>
+
     <pre id="output"></pre>
+    <pre id="tag-vp"></pre>
+    <pre id="tag-vb"></pre>
+    <pre id="tag-np"></pre>
+    <pre id="tag-nn"></pre>
+
   <script type="text/javascript">
   function parsedToTree(parsed) {
     var tree = {tag:'',children:[]};
@@ -35,12 +41,36 @@
     }
     return tree;
   }
+
+  function treeBFS(tree,tag) {
+    var frontier = [tree];
+    while (frontier.length > 0) {
+      var current = frontier.shift();
+      if (current.tag == tag) {
+        return current;
+      } else {
+        for (var i = 0; i < current.children.length; i++) {
+          frontier.push(current.children[i]);
+        }
+      }
+    }
+    return null;
+  }
+
   var tree = parsedToTree(
-    "(ROOT (S (VP (VB open) (NP (DT a) (NN tab)))))"
+    "(ROOT (S (VP (VB open) (NP (DT a) (JJ new) (NN tab)))))"
   );
   console.log(tree);
   console.log(JSON.stringify(tree));
   document.getElementById("output").innerHTML = JSON.stringify(tree,undefined,2);
+  var vp = treeBFS(tree,'VP');
+  document.getElementById("tag-vp").innerHTML = JSON.stringify(vp ,undefined,2);
+  var vb = treeBFS(vp,'VB');
+  document.getElementById("tag-vb").innerHTML = JSON.stringify(vb ,undefined,2);
+  var np = treeBFS(vp,'NP');
+  document.getElementById("tag-np").innerHTML = JSON.stringify(np ,undefined,2);
+  var nn = treeBFS(np,'NN');
+  document.getElementById("tag-nn").innerHTML = JSON.stringify(nn ,undefined,2);
   </script>
   </body>
 </html>
