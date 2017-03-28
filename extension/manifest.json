@@ -13,7 +13,7 @@
 
   "permissions": [
     "tabs",
-    "*://*/*",
+    "*://vlocal.com/vcb/*",
     "<all_urls>"
   ],
 
@@ -29,8 +29,8 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*/*"],
-      "js": ["/lib/jquery-3.1.1.min.js"],
+      "matches": ["*://vlocal.com/vcb/*"],
+      "js": ["/lib/jquery-3.1.1.min.js", "/content_scripts/vcb.js"],
       "run_at": "document_start"
     }
   ]

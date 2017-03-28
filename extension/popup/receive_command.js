@@ -44,10 +44,6 @@ function sendCommand() {
     var response = stanfordParse(commandText);
 
     if (response.status == 200) {
-      browser.tabs.executeScript(null, {
-        file: "/content_scripts/vcb.js"
-      });
-
       var gettingActiveTab = browser.tabs.query({active: true, currentWindow: true});
       gettingActiveTab.then((tabs) => {
         browser.tabs.sendMessage(tabs[0].id, {commandText: commandText, parsed: response.parsed});
