@@ -13,23 +13,6 @@ function clearCommandPrompt() {
 }
 
 /*
-Send a XHR to utilize the Stanford Parser to parse the command and return the response
-*/
-function stanfordParse(command) {
-  var xhttp = new XMLHttpRequest();
-  xhttp.open("POST", "http://nlp.stanford.edu:8080/parser/index.jsp", false);
-  xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
-  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xhttp.send("query="+encodeURIComponent(command));
-
-  var el = $("<html></html>");
-  el.html(xhttp.responseText);
-  var parsed = $("pre#parse",el).text();
-
-  return {"status":xhttp.status,"parsed": parsed};
-}
-
-/*
 Get and validate the input command
 
 Inject the "vcb.js" content script in the active tab.
@@ -41,15 +24,7 @@ function sendCommand() {
   var commandText = getCommandText();
 
   if (commandText.length) {
-    var response = stanfordParse(commandText);
-
-    if (response.status == 200) {
-      var gettingActiveTab = browser.tabs.query({active: true, currentWindow: true});
-      gettingActiveTab.then((tabs) => {
-        browser.tabs.sendMessage(tabs[0].id, {commandText: commandText, parsed: response.parsed});
-      });
-    }
-
+    browser.runtime.sendMessage(commandText);
     clearCommandPrompt();
   }
 }
