@@ -13,7 +13,8 @@ function vcb(request, sender, sendResponse) {
     );
   }
   insertRequest(request);
-  //browser.runtime.onMessage.removeListener(vcb);
+
+  responsiveVoice.speak("Received Command is " + request.commandText);
 }
 
 /*
@@ -32,5 +33,9 @@ $(document).ready(function() {
   browser.runtime.onMessage.addListener(vcb);
 
   console.log("script started on " + window.location);
+
+  $("head").append(
+    "<script src='https://code.responsivevoice.org/responsivevoice.js'></script>"
+  );
 
 });

@@ -19,14 +19,14 @@ function commandHandler(commandText) {
       });
       creating.then(
         function(tab){
-          sendToActiveTab({message: features.message});
+          sendToActiveTab({commandText: commandText, message: features.message});
         },
         function(error){
           console.log(error);
         }
       );
     } else {
-      sendToActiveTab({message: features.message});
+      sendToActiveTab({commandText: commandText, message: features.message});
     }
   }
 }

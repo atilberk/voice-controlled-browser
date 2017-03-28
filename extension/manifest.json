@@ -30,7 +30,7 @@
   "content_scripts": [
     {
       "matches": ["*://vlocal.com/vcb/*"],
-      "js": ["/lib/jquery-3.1.1.min.js", "/content_scripts/vcb.js"],
+      "js": ["/lib/jquery-3.1.1.min.js", "/lib/responsivevoice.js", "/content_scripts/vcb.js"],
       "run_at": "document_start"
     }
   ]
