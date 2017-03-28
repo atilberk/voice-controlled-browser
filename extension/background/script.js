@@ -10,9 +10,38 @@ function stanfordParse(command) {
 
   var el = $("<html></html>");
   el.html(xhttp.responseText);
-  var parsed = $("pre#parse",el).text();
+  var parsed = $("pre#parse",el).text().trim();
 
   return {"status":xhttp.status,"parsed": parsed};
+}
+
+function parsedToTree(parsed) {
+  var tree = {tag:'',children:[]};
+  if (parsed[0] == '(' && parsed[parsed.length -1] == ')') {
+    parsed = parsed.substring(1,parsed.length-1);
+    tree.tag = parsed.substring(0,parsed.indexOf(" "));
+    parsed = parsed.substring(parsed.indexOf(" ")+1);
+    var stack = [];
+    for (var i = 0; i < parsed.length; i++) {
+      var ch = parsed[i];
+      if (ch == '(') {
+        stack.push(i);
+      } else if (ch == ')') {
+        var j = stack.pop();
+        if (stack.length == 0) {
+          var subtree = parsedToTree(parsed.substring(j,i+1));
+          tree.children.push(subtree);
+        }
+      }
+    }
+    if (tree.children.length == 0) {
+      tree.token = parsed;
+      tree.isLeaf = true;
+    } else {
+      tree.isLeaf = false;
+    }
+  }
+  return tree;
 }
 
 function sendToActiveTab(message) {
