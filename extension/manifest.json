@@ -20,7 +20,11 @@
   "browser_action": {
     "default_icon": "icon-32.png",
     "default_title": "VCB",
-    "default_popup": "popup/receive_command.html"
+    "default_popup": "/popup/receive_command.html"
+  },
+
+  "background" : {
+    "scripts" : ["/background/script.js"]
   },
 
   "content_scripts": [
