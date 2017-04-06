@@ -24,7 +24,7 @@ function sendCommand() {
   var commandText = getCommandText();
 
   if (commandText.length) {
-    browser.runtime.sendMessage(commandText);
+    browser.runtime.sendMessage({from:'popup', payload:{commandText:commandText}});
     clearCommandPrompt();
   }
 }

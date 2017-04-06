@@ -4,6 +4,10 @@ vcb():
 * then removes itself as a listener
 */
 function vcb(request, sender, sendResponse) {
+  if(request.from != 'commandHandler') {return;}
+
+  var data = request.payload;
+
   if($("#vcb-bar").length == 0) {
     $("body").first().prepend(
       "<div id='vcb-bar' style='position:fixed;top:0;width:95%;min-height:30px;background-color:#2980b9;z-index:9999;padding:10px 2.5%;box-sizing:content-box;'> \
@@ -12,17 +16,17 @@ function vcb(request, sender, sendResponse) {
       </div>"
     );
   }
-  insertRequest(request);
+  insertRequest(data);
 
-  responsiveVoice.speak("Received Command is " + request.commandText);
+  responsiveVoice.speak("Received Command is " + data.commandText);
 }
 
 /*
 Given a command, create and style an SPAN node consisting of the command,
 then insert the node into the document.
 */
-function insertRequest(request) {
-  $("#vcb-out").html(request.message);
+function insertRequest(data) {
+  $("#vcb-out").html(data.message);
 }
 
 /*
@@ -33,9 +37,5 @@ $(document).ready(function() {
   browser.runtime.onMessage.addListener(vcb);
 
   console.log("script started on " + window.location);
-
-  $("head").append(
-    "<script src='https://code.responsivevoice.org/responsivevoice.js'></script>"
-  );
-
+  
 });

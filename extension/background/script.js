@@ -5,7 +5,12 @@ function sendToActiveTab(message) {
   });
 }
 
-function commandHandler(commandText) {
+function commandHandler(message) {
+  if (message.from != 'popup') { return; }
+  console.log("command is being handled...");
+
+  var commandText = message.payload.commandText;
+
   parseResponse = stanfordParse(commandText);
 
   if (parseResponse.status = 200) {
@@ -19,16 +24,15 @@ function commandHandler(commandText) {
       });
       creating.then(
         function(tab){
-          sendToActiveTab({commandText: commandText, message: features.message});
+          sendToActiveTab({from:'commandHandler', payload:{commandText: commandText, message: features.message}});
         },
         function(error){
           console.log(error);
         }
       );
     } else {
-      sendToActiveTab({commandText: commandText, message: features.message});
+      sendToActiveTab({from:'commandHandler', payload:{commandText: commandText, message: features.message}});
     }
   }
 }
-
 browser.runtime.onMessage.addListener(commandHandler);
