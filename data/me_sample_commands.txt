@@ -1,0 +1,130 @@
+http://vlocal.com/vcb/index.html
+
+refresh
+refresh	(ROOT (S (VP (VB refresh))))
+refresh the page	(ROOT (S (VP (VB refresh) (NP (DT the) (NN page)))))
+refresh page	(ROOT (NP (JJ refresh) (NN page)))
+refresh site	(ROOT (NP (JJ refresh) (NN site)))
+refresh tab	(ROOT (NP (JJ refresh) (NN tab)))
+refresh the content	(ROOT (S (VP (VB refresh) (NP (DT the) (NN content)))))
+refresh the current page	(ROOT (S (VP (VB refresh) (NP (DT the) (JJ current) (NN page)))))
+refresh the active tab	(ROOT (S (VP (VB refresh) (NP (DT the) (JJ active) (NN tab)))))
+refresh the website	(ROOT (S (VP (VB refresh) (NP (DT the) (NN website)))))
+reload	(ROOT (ADJP (JJ reload)))
+reload the page	(ROOT (SINV (VP (VBD reload)) (NP (DT the) (NN page))))
+reload site	(ROOT (NP (JJ reload) (NN site)))
+reload website	(ROOT (NP (JJ reload) (NN website)))
+reload current	(ROOT (NP (JJ reload) (NN current)))
+reload tab	(ROOT (NP (JJ reload) (NN tab)))
+
+go-to
+go to google.com	(ROOT (S (VP (VB go) (PP (TO to) (NP (NN google.com))))))
+browse to google.com	(ROOT (S (VP (VB browse) (PP (TO to) (NP (NN google.com))))))
+navigate to google.com	(ROOT (S (VP (VB navigate) (PP (TO to) (NP (NN google.com))))))
+change the page to google.com	(ROOT (S (VP (VB change) (NP (DT the) (NN page)) (PP (TO to) (NP (NN google.com))))))
+surf to google.com	(ROOT (FRAG (NP (NN surf)) (S (VP (TO to) (VP (VB google.com))))))
+get to google.com	(ROOT (S (VP (VB get) (PP (TO to) (NP (NN google.com))))))
+
+open-tab
+open a new tab	(ROOT (S (VP (VB open) (NP (DT a) (JJ new) (NN tab)))))
+open a tab	(ROOT (S (VP (VB open) (NP (DT a) (NN tab)))))
+open tab	(ROOT (NP (JJ open) (NN tab)))
+open new tab	(ROOT (S (VP (VB open) (NP (JJ new) (NN tab)))))
+create a tab	(ROOT (S (VP (VB create) (NP (DT a) (NN tab)))))
+create a new tab	(ROOT (S (VP (VB create) (NP (DT a) (JJ new) (NN tab)))))
+open another tab	(ROOT (S (VP (VB open) (NP (DT another) (NN tab)))))
+get a new tab	(ROOT (S (VP (VB get) (NP (DT a) (JJ new) (NN tab)))))
+get another tab	(ROOT (S (VP (VB get) (NP (DT another) (NN tab)))))
+
+close-tab
+close the tab	(ROOT (S (VP (VB close) (NP (DT the) (NN tab)))))
+close this tab	(ROOT (S (VP (VB close) (NP (DT this) (NN tab)))))
+close tab	(ROOT (S (VP (VB close) (NP (NN tab)))))
+shut this tab down	(ROOT (S (VP (VB shut) (ADVP (NP (DT this) (NN tab)) (RB down)))))
+kill the tab	(ROOT (S (VP (VB kill) (NP (DT the) (NN tab)))))
+exit from the tab	(ROOT (S (VP (VB exit) (PP (IN from) (NP (DT the) (NN tab))))))
+quit the tab	(ROOT (S (VP (VB quit) (NP (DT the) (NN tab)))))
+
+switch-tab
+
+history
+
+bookmark
+
+scroll
+scroll down	(ROOT (S (VP (VB scroll) (PRT (RP down)))))
+scroll down a bit	(ROOT (S (VP (VB scroll) (PRT (RP down)) (NP (DT a) (NN bit)))))
+scroll to bottom	(ROOT (S (VP (VB scroll) (PP (TO to) (NP (NN bottom))))))
+go down	(ROOT (S (VP (VB go) (PRT (RP down)))))
+go down in the page	(ROOT (S (VP (VB go) (PRT (RP down)) (PP (IN in) (NP (DT the) (NN page))))))
+go bottom	(ROOT (S (VP (VB go) (NP (NN bottom)))))
+scroll down to the bottom	(ROOT (S (VP (VB scroll) (PRT (RP down)) (PP (TO to) (NP (DT the) (NN bottom))))))
+scroll to the middle of the page	(ROOT (S (VP (VB scroll) (PP (TO to) (NP (NP (DT the) (NN middle)) (PP (IN of) (NP (DT the) (NN page))))))))
+scroll to the footer	(ROOT (S (VP (VB scroll) (PP (TO to) (NP (DT the) (NN footer))))))
+get down	(ROOT (S (VP (VB get) (PRT (RP down)))))
+get up	(ROOT (S (VP (VB get) (PRT (RP up)))))
+go up	(ROOT (S (VP (VB go) (PRT (RP up)))))
+go to the top	(ROOT (S (VP (VB go) (PP (TO to) (NP (DT the) (NN top))))))
+go up a little	(ROOT (S (VP (VB go) (ADVP (RB up) (NP (DT a) (RB little))))))
+scroll up for some	(ROOT (S (VP (VB scroll) (PRT (RP up)) (PP (IN for) (NP (DT some))))))
+scroll up	(ROOT (S (VP (VB scroll) (PRT (RP up)))))
+
+click
+click the button	(ROOT (S (VP (VB click) (NP (DT the) (NN button)))))
+click the link	(ROOT (S (VP (VB click) (NP (DT the) (NN link)))))
+click the submit button	(ROOT (S (VP (VB click) (NP (DT the) (JJ submit) (NN button)))))
+click home link at the corner	(ROOT (S (VP (VB click) (NP (NN home) (NN link)) (PP (IN at) (NP (DT the) (NN corner))))))
+click about on the top	(ROOT (S (VP (VB click) (PRT (RP about)) (PP (IN on) (NP (DT the) (NN top))))))
+click to news	(ROOT (S (VP (VB click) (PP (TO to) (NP (NN news))))))
+click on blog	(ROOT (S (VP (VB click) (PP (IN on) (NP (NN blog))))))
+click the contact link on the navigation bar	(ROOT (S (VP (VB click) (NP (DT the) (NN contact) (NN link)) (PP (IN on) (NP (DT the) (NN navigation) (NN bar))))))
+click sign in	(ROOT (S (VP (VB click) (NP (NN sign)) (PP (IN in)))))
+click log out button	(ROOT (S (VP (VB click) (VP (VB log) (PRT (RP out)) (NP (NN button))))))
+click the small red link on the left	(ROOT (S (VP (VB click) (NP (DT the) (JJ small) (JJ red) (NN link)) (PP (IN on) (NP (DT the) (NN left))))))
+click to link birds	(ROOT (S (VP (VB click) (S (VP (TO to) (VP (VB link) (NP (NNS birds))))))))
+press send button	(ROOT (S (VP (VB press) (VP (VB send) (NP (NN button))))))
+hit send button at the end of the form	(ROOT (S (VP (VB hit) (VP (VB send) (NP (NN button)) (PP (IN at) (NP (NP (DT the) (NN end)) (PP (IN of) (NP (DT the) (NN form)))))))))
+select I am a boy option in the form	(ROOT (S (VP (VB select) (SBAR (S (NP (PRP I)) (VP (VBP am) (NP (NP (DT a) (NN boy) (NN option)) (PP (IN in) (NP (DT the) (NN form))))))))))
+check I am a girl	(ROOT (S (VP (VB check) (SBAR (S (NP (PRP I)) (VP (VBP am) (NP (DT a) (NN girl))))))))
+click I like apples	(ROOT (S (VP (VB click) (NP (PRP I)) (PP (IN like) (NP (NNS apples))))))
+select apples	(ROOT (NP (JJ select) (NNS apples)))
+check I like pears box	(ROOT (S (VP (VB check) (NP (PRP I)) (PP (IN like) (NP (JJ pears) (NN box))))))
+mark the option with pears	(ROOT (S (VP (VB mark) (NP (DT the) (NN option)) (PP (IN with) (NP (NNS pears))))))
+check both apples and pears in the form	(ROOT (S (VP (VB check) (NP (NP (DT both) (NNS apples) (CC and) (NNS pears)) (PP (IN in) (NP (DT the) (NN form)))))))
+
+hover
+
+focus
+
+type
+type John into the name field	(ROOT (NP (NP (NN type)) (NP (NP (NNP John)) (PP (IN into) (NP (DT the) (NN name) (NN field))))))
+type Doe to surname box	(ROOT (NP (NP (NN type)) (NP (NP (NNP Doe)) (PP (TO to) (NP (NN surname) (NN box))))))
+type to name field John	(ROOT (NP (NP (NP (NN type)) (PP (TO to) (NP (NN name) (NN field)))) (NP (NNP John))))
+write John to name field	(ROOT (S (VP (VB write) (S (NP (NNP John)) (VP (TO to) (VP (VB name) (NP (NN field))))))))
+write to surname field Doe	(ROOT (S (VP (VB write) (PP (TO to) (NP (NN surname) (NN field) (NN Doe))))))
+write John to name form	(ROOT (S (VP (VB write) (S (NP (NNP John)) (VP (TO to) (VP (VB name) (NP (NN form))))))))
+write into the surname form Doe	(ROOT (S (VP (VB write) (PP (IN into) (NP (DT the) (NN surname) (NN form) (NN Doe))))))
+fill name box with Joe	(ROOT (S (VP (VB fill) (NP (NN name) (NN box)) (PP (IN with) (NP (NNP Joe))))))
+fill surname input as Doe	(ROOT (S (VP (VB fill) (NP (NN surname) (NN input)) (PP (IN as) (NP (NNP Doe))))))
+put John to the name box	(ROOT (S (VP (VB put) (NP (NNP John)) (PP (TO to) (NP (DT the) (NN name) (NN box))))))
+put name form John	(ROOT (SINV (VP (VBD put) (NP (NN name) (NN form))) (NP (NNP John))))
+set surname field as Doe	(ROOT (S (VP (VB set) (NP (NN surname) (NN field)) (PP (IN as) (NP (NNP Doe))))))
+set name in the form to John	(ROOT (S (VP (VB set) (NP (NN name)) (PP (IN in) (NP (NP (DT the) (NN form)) (PP (TO to) (NP (NNP John))))))))
+
+delete
+
+select
+
+slide
+
+read
+read the title	(ROOT (S (VP (VB read) (NP (DT the) (NN title)))))
+read me the title of the content	(ROOT (S (VP (VB read) (S (NP (PRP me)) (NP (NP (DT the) (NN title)) (PP (IN of) (NP (DT the) (NN content))))))))
+read the link in red	(ROOT (S (VP (VB read) (NP (DT the) (NN link)) (PP (IN in) (NP (NN red))))))
+tell me the title of the article	(ROOT (S (VP (VB tell) (NP (PRP me)) (NP (NP (DT the) (NN title)) (PP (IN of) (NP (DT the) (NN article)))))))
+read the page's title	(ROOT (S (VP (VB read) (NP (NP (DT the) (NN page) (POS 's)) (NN title)))))
+read the content's title	(ROOT (S (VP (VB read) (NP (NP (DT the) (NN content) (POS 's)) (NN title)))))
+
+drag
+
+download
