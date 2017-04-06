@@ -40,3 +40,5 @@ document.addEventListener("keydown", (e) => {
     sendCommand();
   }
 });
+
+document.getElementById("command").focus();

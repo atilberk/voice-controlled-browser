@@ -13,6 +13,7 @@ function commandHandler(message) {
 
   parseResponse = stanfordParse(commandText);
 
+  console.log("recieved parse result!");
   if (parseResponse.status = 200) {
     var rootTree = parsedToTree(parseResponse.parsed);
 
