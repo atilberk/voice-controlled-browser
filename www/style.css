@@ -1,0 +1,51 @@
+html, body, #wrapper {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #fdd;
+  min-height: 10vh;
+}
+
+aside.sidebar {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  background-color: #dff;
+  min-height: 80vh;
+  height: 100vh;
+}
+
+article.content {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+footer {
+  background-color: #ffa;
+  min-height: 10vh;
+}
+
+header ul {
+  margin: 0;
+}
+header ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+#bottom-links-container {
+  margin-top: 500px;
+}
+
+.color-red, .color-red * { color: red !important;}
+.color-green, .color-green * { color: green !important;}
+.color-blue, .color-blue * { color: blue !important;}
+.color-yellow, .color-yellow * { color: yellow !important;}
+.color-orange, .color-orange * { color: orange !important;}
+.color-pink, .color-pink * { color: pink !important;}
+.color-purple, .color-purple * { color: purple !important;}
+.color-grey, .color-grey * { color: grey !important;}
+.color-white, .color-white * { color: white !important;}
+.color-black, .color-black * { color: black !important;}
