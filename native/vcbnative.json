@@ -1,0 +1,7 @@
+{
+  "name": "vcbnative",
+  "description": "Native part of Voice-Controlled Browser",
+  "path": "/home/atilberk/Desktop/SPRING2017/ENGR491/dev/vcb/native/vcbnative",
+  "type": "stdio",
+  "allowed_extensions": [ "vcbext@example.org" ]
+}

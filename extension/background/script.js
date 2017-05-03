@@ -1,3 +1,12 @@
+var port = browser.runtime.connectNative("vcbnative");
+
+/*
+Listen for messages from the app.
+*/
+port.onMessage.addListener((response) => {
+  console.log("Received: " + response);
+});
+
 function sendToActiveTab(message) {
   var gettingActiveTab = browser.tabs.query({active: true, currentWindow: true});
   gettingActiveTab.then((tabs) => {
@@ -11,6 +20,18 @@ function commandHandler(message) {
 
   var commandText = message.payload.commandText;
 
+  sendToActiveTab({
+    from:'commandHandler',
+    payload:{
+      commandText: commandText,
+      message: "Hello world2"
+    }
+  });
+
+  console.log("Sending:  ping");
+  port.postMessage("ping");
+
+  /*
   parseResponse = stanfordParse(commandText);
 
   console.log("recieved parse result!");
@@ -59,5 +80,6 @@ function commandHandler(message) {
       });
     }
   }
+  */
 }
 browser.runtime.onMessage.addListener(commandHandler);

@@ -7,11 +7,19 @@
   "description": "Allows voice control of web pages",
   "homepage_url": "https://bitbucket.org/atilberk/vcb",
 
+  "applications": {
+    "gecko": {
+      "id": "vcbext@example.org",
+      "strict_min_version": "50.0"
+    }
+  },
+
   "icons": {
     "48": "icon-48.png"
   },
 
   "permissions": [
+    "nativeMessaging",
     "tabs",
     "*://vlocal.com/vcb/*",
     "<all_urls>"

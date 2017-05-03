@@ -1,0 +1,4 @@
+#!/bin/bash
+
+notify-send "VCBNative is now active!"
+/home/atilberk/Envs/vcb/bin/python /home/atilberk/Desktop/SPRING2017/ENGR491/dev/vcb/native/vcbnative.py
