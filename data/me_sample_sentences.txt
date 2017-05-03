@@ -1,0 +1,300 @@
+refresh
+refresh the page
+refresh page
+refresh site
+refresh tab
+refresh the content
+refresh the current page
+refresh the active tab
+refresh the website
+reload please
+reload
+reload the page
+reload site
+reload website
+reload current
+reload tab
+reload the content
+reload the current page
+reload the active tab
+reload the website
+refresh this page
+refresh current page
+refresh this site
+refresh current tab
+refresh this content
+refresh this active page
+refresh this active tab
+refresh website
+refresh please
+reload the active page
+open a new tab
+open a tab
+open tab
+open new tab
+create a tab
+create a new tab
+open another tab
+get a new tab
+get another tab
+open a fresh tab
+get another tab
+open a blank page
+create another tab
+open one tab now
+create an empty tab
+open a novel tab
+get another tab in this window
+open a new tab in the window
+open a tab in current window
+go to a new tab
+switch to a new tab
+open an empty tab now
+create a tab in current window
+open a tab for me
+switch to a new tab please
+create a new tab please
+open a new page now
+switch to a new page
+open a blank tab
+get me a new tab
+close the tab
+close this tab
+close tab
+shut this tab down
+kill the tab
+exit from the tab
+quit the tab
+close the page
+close this page now
+close current tab
+close the tab please
+close the active tab
+close the open tab
+close the current tab
+get this tab closed
+close the active tab
+kill the current page
+end the current tab
+close the current tab please
+close this page
+close the tab now
+shut down the tab
+kill the active page
+close the tab now please
+close
+close now
+close this
+close active page
+close this active page
+get the tab closed
+switch to the next tab
+switch to the previous tab
+switch to the right tab
+switch to the left tab
+switch to the first tab
+switch to the second tab
+switch to the last tab
+switch to the next page
+switch to the previous page
+switch to the right page
+switch to the left page
+go to the tab in the right
+go to the tab in the left
+go to the first tab
+go to google's tab
+go to facebooks's tab
+switch to google's tab
+go back to the previous tab
+go to the mail tab
+switch to the tab of mail
+switch to the tab of google
+switch to twitter
+change the tab
+switch tabs
+change the active tab to google
+change to the right tab
+change to the left tab
+change to the first tab
+go to the page in the right
+go to the page in the left
+go back in the history
+go to the previous page
+go back
+go to previous page
+go forward in the history
+go to the next page in the history
+return to the previous page
+return to the next page
+go back to the last page
+return to the last page
+go to the page before
+go to the page after
+go back one page
+go forward one page
+go back one
+go forward one
+get back to the previous page
+get back one page
+get to the next page
+go one page back
+go one page forward
+go one previous page
+go one next page
+return back
+return to the earlier page
+go back to the earlier page
+go back to the latest page
+get back
+return to the old page
+go forward
+go to google.com
+go to facebook.com
+go to the address youtube.com
+go to www.google.com
+go to www.imdb.com
+go to dropbox's website
+go to gmail's website
+go to amazon store
+go to ebay
+go to google mail
+go to google drive
+get to facebook
+get to reddit
+go to mailbox
+go to windows live mail
+go to wordpress codex
+take me to twitter.com
+take me to the address yahoo.com
+navigate to bbc.com
+navigate me to github.com
+open medium.com
+open instagram.com
+get me to google.com
+get to facebook.com
+change to youtube.com
+change to imdb.com
+move to yahoo.com
+move to bbc.co.uk
+pass on to instagram.com
+pass on to dropbox.com
+scroll
+scroll down
+scroll down a bit
+scroll to bottom
+go down
+go down in the page
+go bottom
+scroll down to the bottom
+scroll to the middle of the page
+scroll to the footer
+get down
+get up
+go up
+go to the top
+go up a little
+scroll up for some
+scroll up
+go to the bottom of the page
+go to the top of the page
+get to the bottom
+get to the top
+go to the bottom of the page
+go to the top of the page
+scroll down more
+scroll up more
+slide down
+slide up
+go towards the bottom
+go towards the top
+scroll up a bit
+click the button
+click the link
+click the submit button
+click home link at the corner
+click about on the top
+click to news
+click on blog
+click the contact link on the navigation bar
+click sign in
+click log out button
+click the small red link on the left
+click to link birds
+click to the search button
+click the cancel button
+click to save
+click to read more link
+press send button
+press cancel
+press the green button
+press next
+press back
+hit send button at the end of the form
+select I am a boy option in the form
+check I am a girl
+click I like apples
+select apples
+select all elements on the list
+check I like pears box
+mark the option with pears
+check both apples and pears in the form
+type John into the name field
+type Doe to surname box
+type to name field James
+type apple into the fruits field
+type horse into the animals field
+type into the city field Istanbul
+type into the address box baker street
+type Khaleesi to character field
+type whisky into the drink form
+write Brad to actor field
+write to color field Brown
+write Terry to player form
+write into the lastname form Potter
+write into the enemy form Smith
+write crystal avenue into the address form
+write three to the age form
+write thousand to the salary field
+fill name box with Joe
+fill surname input as Cooper
+fill the school field as Koc
+fill the text input as movies
+fill the tags as comedy
+put George to the king box
+put girlfriend form Jane
+put Titanic to my favorite movie field
+put Bob to painter form
+set beer field as Miller
+set name in the form to Jim
+set Frank to the best friend field
+set orange as the fruit
+read the title
+read me the title of the content
+read the link in red
+read me the page's title
+read the content's title
+read the first paragraph of the content
+read a sentence from the text
+read the author's name
+read the post date
+read the flying manual
+read me the description
+read the list items
+read the menu items
+read the submenu items
+read me all
+read the comments
+read the latest message
+read the caption of the image
+read me the options of the form
+tell me the title of the article
+tell the name of the editor
+tell me the content of the post
+tell the date of the content
+tell me the user name of the sender
+tell me the time of the message
+tell me the label of the input
+tell me the number of results
+say the title
+say the text
+speak the page

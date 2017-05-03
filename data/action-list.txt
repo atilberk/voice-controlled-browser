@@ -1,0 +1,12 @@
+refresh
+open
+close
+switch
+history
+bookmark
+go-to
+scroll
+click
+hover
+type
+read
