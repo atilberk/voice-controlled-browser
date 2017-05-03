@@ -25,14 +25,38 @@ function commandHandler(message) {
       });
       creating.then(
         function(tab){
-          sendToActiveTab({from:'commandHandler', payload:{commandText: commandText, message: features.message}});
+          sendToActiveTab({
+            from:'commandHandler',
+            payload:{
+              commandText: commandText,
+              message: features.message
+            }
+          });
         },
         function(error){
           console.log(error);
         }
       );
+    } else if (features.action == "click") {
+      sendToActiveTab({
+        from:'pageHandler',
+        payload: {}
+      });
+      sendToActiveTab({
+        from:'commandHandler',
+        payload:{
+          commandText: commandText+". And, you can see the list of links at the console",
+          message: features.message
+        }
+      });
     } else {
-      sendToActiveTab({from:'commandHandler', payload:{commandText: commandText, message: features.message}});
+      sendToActiveTab({
+        from:'commandHandler',
+        payload:{
+          commandText: commandText,
+          message: features.message
+        }
+      });
     }
   }
 }
