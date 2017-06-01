@@ -16,7 +16,7 @@ VCB is a collection of cross-browser web extension and utilities for allowing us
 *(Instructions for Ubuntu 16.04 + Mozilla Firefox)*
 
 1. Clone the repository to your local
-1. Install the python dependencies (Tested with Python 3.5.2)
+1. Install the python dependencies from `/path/to/vcb/native/requirements.txt` (Tested with Python 3.5.2)
 1. Symbollically link the VCB's native executable to Mozilla's native messaging directory
 
    ```sudo ln -s /path/to/vcb/native/vcbnative.json /usr/lib/mozilla/native-messaging-hosts/```
