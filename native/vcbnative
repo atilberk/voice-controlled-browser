@@ -1,4 +1,14 @@
 #!/bin/bash
 
+#######################################
+# VCB's native application controller #
+#######################################
+
+# kill previous instances
+ps aux | grep vcbnative.py | grep Sl | python -c "import sys; print('\n'.join(map(lambda l: l.split()[1],sys.stdin.readlines())))" | xargs -I {} kill {}
+
+# notify the user
 notify-send "VCBNative is now active!"
+
+# run the Python script
 /home/atilberk/Envs/vcb/bin/python /home/atilberk/Desktop/SPRING2017/ENGR491/dev/vcb/native/vcbnative.py

@@ -245,8 +245,8 @@ type apple into the fruits field
 type horse into the animals field
 type into the city field Istanbul
 type into the address box baker street
-type Khaleesi to character field
-type whisky into the drink form
+search for Khaleesi
+search for whisky into the drink form
 write Brad to actor field
 write to color field Brown
 write Terry to player form
@@ -262,7 +262,7 @@ fill the text input as movies
 fill the tags as comedy
 put George to the king box
 put girlfriend form Jane
-put Titanic to my favorite movie field
+search for Titanic in the site
 put Bob to painter form
 set beer field as Miller
 set name in the form to Jim
